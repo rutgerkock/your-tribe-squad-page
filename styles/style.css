@@ -27,7 +27,7 @@ ul {
 
 li {
     flex-grow:1;
-    transition: 0.5s;
+    transition: 1s;
 }
 
 li:hover {
@@ -58,4 +58,13 @@ button {
 
 #previen:hover {
     background-color: rgb(92, 255, 138);
+}
+
+.info {
+    display: none; 
+    background-color: antiquewhite;
+}
+
+li:hover .info {
+    display: block;
 }
