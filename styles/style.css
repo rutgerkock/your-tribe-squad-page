@@ -80,17 +80,6 @@ section .test {
     }
 }
 
-
-li {
-    flex-grow:1;
-    transition: 1s;
-    
-}
-
-li:hover {
-    flex-grow:15;
-}
-
 .panelen {
 
     height: 49.7vh;
@@ -105,6 +94,11 @@ li:hover {
     
     background-color: rgb(255, 255, 255);
 
+    transition: 0.3s;
+}
+
+.panelen:hover {
+    width: 40vw;
 }
 
 h1, .rutger-h1 {
