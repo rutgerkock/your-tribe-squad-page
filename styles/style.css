@@ -39,11 +39,21 @@
   }
 
   ::-webkit-scrollbar {
-    width: 0;
-    height: 0;
+    width: 100%;
+    height: 0.6vw;
+    background-color: #4f4f4f;
+    border: none;
   }
 
- 
+  ::-webkit-scrollbar-thumb {
+    background: #9d9d9d;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    box-shadow: inset 0 0 5px grey;
+    border-radius: 10px;
+  }
+
 
 ul {
     height: 100%;
@@ -51,7 +61,6 @@ ul {
     display: flex;
     padding: 0;
     margin: 0;
-
 }
 
 li {
@@ -66,7 +75,7 @@ li:hover {
 
 .panelen {
 
-    height: 50vh;
+    height: 49.7vh;
 
     width:33vw;
 
@@ -194,6 +203,10 @@ h1, .rutger-h1 {
 @media (max-width: 500px) {
     .panelen {
         min-width: 48vw;
+        max-height: 49.2vh;
     }
+    ::-webkit-scrollbar {
+        height: 2vw;
+      }
 
 }
