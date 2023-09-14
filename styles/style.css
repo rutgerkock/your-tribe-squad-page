@@ -20,30 +20,44 @@
     justify-content: center;
 
     align-items: center;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    
 
   }
 
  
 
   section{
-
     display: flex;
-
     flex-direction:column;
+    padding: 0;
+    margin: 0;
+    overflow-y: hidden;
+    overflow-x: scroll;
+  }
 
+  ::-webkit-scrollbar {
+    width: 0;
+    height: 0;
   }
 
  
 
 ul {
-    height: 50vh;
+    height: 100%;
     list-style: none;
     display: flex;
+    padding: 0;
+    margin: 0;
+
 }
 
 li {
     flex-grow:1;
     transition: 1s;
+    
 }
 
 li:hover {
@@ -52,15 +66,15 @@ li:hover {
 
 .panelen {
 
-    height: 40vh;
+    height: 50vh;
 
-    width:40vw;
+    width:33vw;
 
     cursor: pointer;
 
     transition: 0.3s ease;
 
-    border: 0;
+    border: 0.05rem solid rgba(94, 94, 94, 0.5);
     
     background-color: rgb(255, 255, 255);
 
@@ -174,5 +188,12 @@ h1, .rutger-h1 {
 #previen:hover .previen-h1-2 {
 
     display: block;
+
+}
+
+@media (max-width: 500px) {
+    .panelen {
+        min-width: 48vw;
+    }
 
 }
