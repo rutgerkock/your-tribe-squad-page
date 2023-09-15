@@ -57,7 +57,6 @@ section .listUpper .listBottom {
 .panelen {
     height: 49.7vh;
     width:24.5vw;
-    cursor: pointer;
     transition: 0.3s ease;
     border: 0.05rem solid rgba(94, 94, 94, 0.5);
     background-color: rgb(255, 255, 255);
@@ -87,11 +86,16 @@ h1 {
     }
 
     .panelen:hover{
-        width: 33vw;
+        width: 49vw;
     }
     
     ::-webkit-scrollbar {
         height: 2vw;
 }
+/* 
+Als het scherm kleiner dan 600px wordt, komen er 2 'tegels' op het 
+scherm in plaats van 4 tegels. Ook wordt de scrollbar hoger, zodat ie beter 
+opvalt op een kleiner scherm, en wordt de hover animatie van de tegels weggehaald.
+*/
 
 }
