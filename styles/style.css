@@ -15,7 +15,6 @@
     align-items: center;
     padding: 0;
     margin: 0;
-    overflow: hidden;
   }
 
   section{
@@ -25,6 +24,7 @@
     margin: 0;
     overflow-y: hidden;
     overflow-x: scroll;
+    scroll-snap-type: x mandatory;
 }
 
   ::-webkit-scrollbar {
@@ -51,24 +51,12 @@ ul {
     margin: 0;
 }
 
-section .test {
+section .listUpper .listBottom {
     animation: test 700ms ease 1s 2;}
-
-@keyframes test {
-    0% {
-        transform: translateX(0);
-    }
-    50% {
-        transform: translateX(-25px);
-    }
-    100% {
-        transform: translateX(0);
-    }
-}
 
 .panelen {
     height: 49.7vh;
-    width:33vw;
+    width:24.5vw;
     cursor: pointer;
     transition: 0.3s ease;
     border: 0.05rem solid rgba(94, 94, 94, 0.5);
@@ -77,9 +65,9 @@ section .test {
 }
 
 .panelen:hover {
-    width: 35vw;
+    scale: 1.05;
     cursor: crosshair;
-    box-shadow: rgba(74, 74, 88, 0.462) 14px 14px 14px 14px;
+    box-shadow: rgba(74, 74, 88, 0.2) 14px 14px 14px 14px;
 }   
 
   
@@ -92,9 +80,9 @@ h1 {
     letter-spacing: 4px;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
     .panelen {
-        min-width: 48vw;
+        min-width: 49vw;
         max-height: 49.2vh;
     }
 
@@ -104,6 +92,6 @@ h1 {
     
     ::-webkit-scrollbar {
         height: 2vw;
-      }
+}
 
 }
