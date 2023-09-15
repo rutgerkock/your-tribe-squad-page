@@ -58,15 +58,14 @@ section .listUpper .listBottom {
     height: 49.7vh;
     width:24.5vw;
     transition: 0.3s ease;
-    border: 0.05rem solid rgba(94, 94, 94, 0.5);
+    border: 0.01rem solid rgba(94, 94, 94, 0.1);
     background-color: rgb(255, 255, 255);
     transition: 0.3s;
 }
 
 .panelen:hover {
-    scale: 1.05;
     cursor: crosshair;
-    box-shadow: rgba(74, 74, 88, 0.2) 14px 14px 14px 14px;
+    box-shadow: inset 0px 0px 20px 10px rgba(112, 112, 112, 0.6)
 }   
 
   
