@@ -78,7 +78,10 @@ section .test {
 
 .panelen:hover {
     width: 35vw;
-}
+    cursor: crosshair;
+    box-shadow: rgba(74, 74, 88, 0.462) 14px 14px 14px 14px;
+}   
+
   
 h1 {
     font-family: 'Segoe UI', sans-serif;
@@ -94,6 +97,11 @@ h1 {
         min-width: 48vw;
         max-height: 49.2vh;
     }
+
+    .panelen:hover{
+        width: 33vw;
+    }
+    
     ::-webkit-scrollbar {
         height: 2vw;
       }
