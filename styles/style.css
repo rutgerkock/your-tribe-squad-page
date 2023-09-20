@@ -15,6 +15,7 @@
     align-items: center;
     padding: 0;
     margin: 0;
+
   }
 
   section{
@@ -59,7 +60,7 @@ section .listUpper .listBottom {
     width:24.5vw;
     transition: 0.3s ease;
     border: 0.0rem solid rgba(94, 94, 94, 0.1);
-    background-color: rgb(255, 255, 255);
+    /* background-color: rgb(255, 255, 255); */
     transition: 0.3s;
 }
 
@@ -97,5 +98,28 @@ Als het scherm kleiner dan 600px wordt, komen er 2 'tegels' op het
 scherm in plaats van 4 tegels. Ook wordt de scrollbar hoger, zodat ie beter 
 opvalt op een kleiner scherm, en wordt de hover animatie van de tegels weggehaald.
 */
+
+}
+
+@media (prefers-color-scheme: dark) {
+
+  body {
+    background-color: rgb(101, 101, 101);;
+  }
+
+  h1 {
+    color: #dadce4;
+  }
+
+  .panelen {
+    background-color: rgb(101, 101, 101);;
+}
+
+
+  .panelen:hover {
+    box-shadow:rgb(92, 92, 92) 9.91px 9.91px 15px inset,
+     rgb(110, 110, 110) -9.91px -9.91px 15px inset;
+}   
+
 
 }
