@@ -7,7 +7,7 @@
   }
 
   body {
-    background-color: rgb(255, 255, 255);
+    background-color: #dadce4;
     height: 100vh;
     width: 100vw;
     display: flex;
@@ -58,14 +58,14 @@ section .listUpper .listBottom {
     height: 49.7vh;
     width:24.5vw;
     transition: 0.3s ease;
-    border: 0.01rem solid rgba(94, 94, 94, 0.1);
+    border: 0.0rem solid rgba(94, 94, 94, 0.1);
     background-color: rgb(255, 255, 255);
     transition: 0.3s;
 }
 
 .panelen:hover {
     cursor: crosshair;
-    box-shadow: inset 0px 0px 20px 10px rgba(112, 112, 112, 0.6)
+    box-shadow: rgb(212, 214, 217) 7px 7px 14px inset, rgb(255, 255, 255) -7px -7px 14px inset;
 }   
 
   
