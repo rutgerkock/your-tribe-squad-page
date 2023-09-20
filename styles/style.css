@@ -101,6 +101,7 @@ opvalt op een kleiner scherm, en wordt de hover animatie van de tegels weggehaal
 
 }
 
+
 @media (prefers-color-scheme: dark) {
 
   body {
@@ -119,7 +120,9 @@ opvalt op een kleiner scherm, en wordt de hover animatie van de tegels weggehaal
   .panelen:hover {
     box-shadow:rgb(92, 92, 92) 9.91px 9.91px 15px inset,
      rgb(110, 110, 110) -9.91px -9.91px 15px inset;
-}   
-
+  }
 
 }
+
+/*kiest je voorkeur in de settings tussen light/dark mode
+ en past het toe op de website*/
